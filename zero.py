@@ -43,11 +43,14 @@
         
     July 26, 2022 (1.3.1)
         - 'memory optimization' system_function added
+        
+    July 26, 2022 (1.3.2)
+        - bug fixed
     
 # ---------------------------------------------------- #
 '''
 
-__version__ = '1.3.1'
+__version__ = '1.3.2'
 
 # -------------------- .modules. -------------------- #
 
@@ -687,6 +690,7 @@ def self_pay():
             
             list_seller = (info_seller['대표자명'] + info_seller['대표자휴대전화'] + info_seller['가맹점관리번호']).tolist()
             
+            mu = mu.astype({'가맹점ID':'string'})
             mu['자전거래ID'] = mu['ID'] + mu['가맹점ID']
             
             mu = mu[mu['자전거래ID'].isin(list_seller)]
