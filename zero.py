@@ -68,15 +68,15 @@ from tkinter.filedialog import askopenfilenames
 # ------------------- .variables. ------------------- #
 
 title = '지역상품권 부정사용 분석'     # software title
-username = ''                   # username if state is logged in
-workdir = ''                    # location where this software is
-resultdir = ''                  # location where output file saved
-filename = ''                   # file name for output file
-filename_dateflag = ''          # date appended file name for output file
-version = ''                    # version
-mu = ''                         # open data as pandas
-flag_login = 0                  # flag for login status
-flag_prepro = 0                 # flag for preprocessing
+username = ''                     # username if state is logged in
+workdir = ''                      # location where this software is
+resultdir = ''                    # location where output file saved
+filename = ''                     # file name for output file
+filename_dateflag = ''            # date appended file name for output file
+version = ''                      # version
+mu = ''                           # open data as pandas
+flag_login = 0                    # flag for login status
+flag_prepro = 0                   # flag for preprocessing
 
 # -------------------- .sysfunc. -------------------- #
 
